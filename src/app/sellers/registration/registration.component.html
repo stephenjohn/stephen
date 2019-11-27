@@ -1,0 +1,35 @@
+<p>registration works!</p>
+
+<form action=""  [formGroup]="sellerform" (ngSubmit)="save()">
+
+<label for="">name</label>
+<div>
+<input type="text" formControlName="name">
+</div>
+<label for="">item</label>
+<div>
+<input type="text" formControlItem="item">
+</div>
+<label for="">licenceno</label>
+<div>
+<input type="text" formControlLicenceno="licenceno">
+</div>
+
+personal info
+<div formGroupName="personaldata">
+    <div>
+pname<input type="text" formControlName="pname">
+</div>
+<div>
+email<input type="text" formControlName="email">
+</div>
+<div>
+phoneno<input type="text" formControlName="phoneno">
+</div>
+
+<input type="submit" value="save">
+status{{sellerform.status}}
+</div>
+</form>
+
+

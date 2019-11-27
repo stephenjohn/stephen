@@ -1,0 +1,34 @@
+<p>customer works!</p>
+<div class="row">
+    <div class="col-sm-6">
+        <div [hidden]="submitted">
+
+<form action="" class="form-group" (submit)="save()">
+
+<label for="">username</label>
+
+    <div>
+<input type="text" [(ngModel)]= "model.username" name="username" class="form-control">
+</div>
+<label for="">password</label>
+<div>
+        <input type="text" [(ngModel)]="model.password" name="password" class="form-control"> 
+      
+</div>
+<label for="">email</label>
+<div>
+        <input type="text" [(ngModel)]="model.email" name="email" class="form-control"> 
+</div>
+<label for="">dob</label>
+<div>
+        <input type="text" [(ngModel)]="model.dob" name="dob" class="form-control"> 
+</div>
+<div>
+        <button type="save()">submit</button>
+</div>
+
+</form>
+
+
+
+

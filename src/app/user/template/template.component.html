@@ -1,0 +1,52 @@
+<p>template works!</p>
+<div class="row">
+    <div class="col-sm-6">
+<form action="" class="form-group" (submit)="save()">
+
+    <label for="">username</label>
+    
+        <div>
+    <input type="text" [(ngModel)]= "model.username" name="username" class="form-control"
+    [(ngModel)]="model.username"  #uname
+    maxlength="5"
+    minlength="3"
+    required>
+    {{uname.dirty}}
+    {{uname.touched}}
+    <div *ngIf='!uname.dirty||!uname.touched'
+    class="alert alert-danger">
+    plase fill balnk field
+    </div>
+        </div>
+    <label for="">password</label>
+    <div>
+            <input type="text" [(ngModel)]="model.password" name="password" class="form-control"
+            [(ngModel)]="model.password"  #uname="ngModel"
+            maxlength="5"
+            minlength="3"
+            required>
+            {{uname.dirty}}
+            {{uname.touched}}
+            <div *ngIf='!uname.dirty||!uname.touched'
+            class="alert alert-danger">
+            plase fill balnk field
+            </div>
+    </div>
+    <label for="">usertype</label>
+    <div>
+            <input type="text" [(ngModel)]="model.usertype" name="usertype" class="form-control" 
+            [(ngModel)]="model.username"  #uname="ngModel"
+            maxlength="5"
+            minlength="3"
+            required>
+            {{uname.dirty}}
+            {{uname.touched}}
+            <div *ngIf='!uname.dirty||!uname.touched'
+            class="alert alert-danger">
+            plase fill balnk field
+            </div>
+        </div>
+    <div>
+        <button type="save()">submit</button>
+</div>
+</form>

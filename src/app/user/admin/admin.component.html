@@ -1,0 +1,39 @@
+<p>admin works!</p>
+<form action=""  [formGroup]="adminform" (ngSubmit)="save">
+
+        <label for="">name</label>
+        <div>
+        <input type="text" formControlName="name">
+        </div>
+        <label for="">email</label>
+        <div>
+        <input type="text" formControlName="email">
+        </div>
+        <label for="">phoneno</label>
+        <div>
+        <input type="text" formControlName="phoneno">
+        </div>
+        ADDRESS
+        <div formGroupName="addressdata">
+                <div>
+            houseno<input type="text" formControlName="houseno">
+            </div>
+            <div>
+            housename<input type="text" formControlName="housename">
+            </div>
+            <div>
+            area<input type="text" formControlName="area">
+            </div>
+       
+        <div>
+        username <input type="text" formControlName="username">
+         </div>
+         <div>
+            password<input type="text" formControlName="password">
+            </div>
+       
+
+            <input type="submit" value="save">
+            status {{adminform.status}}
+        </div>
+            </form>

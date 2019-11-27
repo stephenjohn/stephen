@@ -1,0 +1,8 @@
+<p>view works!</p>
+<div *ngFor="let p of data">
+{{p.id}}
+{{p.name}}
+{{p.price}}
+<!-- <div><button>view</button></div> -->
+<div><button (click)="delete(p)"> delete</button></div>
+</div>
